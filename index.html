@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab</title>
+</head>
+<body>
+    <h1 class = "professor"></h1>
+    <div class = "variable"></div>
+    <div class = "percentage"></div>
+    <div class = "grade"></div>
+    <div class = "lines"></div>
+</body>
+
+<script>
+    // let quantity = prompt("Please enter a number: ");
+    // quantity = parseInt(quantity);
+    // let quantityArea = document.querySelector(".variable");
+    // quantityArea.innerHTML = `Quantity: ${quantity}`;
+
+    // let originalPercent = prompt("Enter a Percentage amount: ");
+    // originalPercent = parseFloat(originalPercent);
+    // percent = originalPercent * .01;
+    // let total = quantity * percent;
+    // let percentArea = document.querySelector(".percentage");
+    // percentArea.innerHTML = `${originalPercent}% of Quantity, ${quantity}, is ${total}`;
+
+    //Task #2
+
+    // grade = prompt('Please enter the exam points value');
+    // let gradeArea = document.querySelector(".grade")
+    // grade = parseFloat(grade)
+    // let letterGrade = ""
+    // if (grade > 90){
+    //     letterGrade = 'A'
+    // }
+    // else if (grade>80){
+    //     letterGrade = 'B'
+    // }
+    // else if (grade>70){
+    //     letterGrade = 'C'
+    // }
+    // else if(grade>60){
+    //     letterGrade = 'D'
+    // }
+    // else{
+    //     letterGrade = 'F'
+    // }
+    // let bLetterGrade = ''
+    // gradeB = prompt('Please enter the exam points value');
+    // switch(true){
+    //     case(gradeB > 90):
+    //     bLetterGrade = 'A';
+    //     break;
+    //     case(gradeB > 80):
+    //     bLetterGrade = 'B';
+    //     break;
+    //     case(gradeB > 70):
+    //     bLetterGrade = 'C';
+    //     break;
+    //     case(gradeB > 60):
+    //     bLetterGrade = 'D';
+    //     break;
+    //     default:
+    //         bLetterGrade = 'F';
+    // }
+    // gradeArea.innerHTML = `The grade is (a)-${letterGrade} (b)-${bLetterGrade}`
+
+
+    // Task 3
+
+    // let professor = prompt('Who are the lines for: ');
+    // let lines = prompt('What is the line?');
+    // let number = prompt('How many lines?');
+
+    // number = parseInt(number);
+
+    // for(let lineCount = 1; lineCount <= number; lineCount++){
+    //     console.log(`${lineCount}. ${lines}`);
+    // }
+
+    //Task 4
+    // let professor = prompt('Who are the lines for: ');
+    // let lines = prompt('What is the line?');
+    // let number = prompt('How many lines?');
+    // let lineArea = document.querySelector(".lines")
+    // number = parseInt(number);
+    // count = 1
+    // let task4_str = "<ul>";
+    // while(count <= number){
+    // task4_str += `<li>${count} ${lines}</li>`;
+    // count++;
+
+    // }
+    // task4_str += "</ul>";
+    // lineArea.innerHTML = task4_str;
+    // let professorArea = document.querySelector(".professor");
+    // professorArea.innerHTML += professor;
+
+
+    //Task 5
+
+    let professor = prompt('Who are the lines for: ');
+    let lines = prompt('What is the line?');
+    let number = prompt('How many lines?');
+
+    const lineWriter = (number) =>{
+        count = 1;
+        let task5_str = "<ul>";
+        while(count <= number){
+        task5_str += `<li>${count} ${lines}</li>`;
+        count++;  
+    }
+    task5_str += "</ul>";
+    return task5_str;
+}
+    let professorArea = document.querySelector(".professor");
+    professorArea.innerHTML += professor;
+    let lineArea = document.querySelector(".lines");
+    lineArea.innerHTML += lineWriter(number);
+
+   //Task 7
+
+   /*Hoisting refers to the process whereby the interpreter appears to move the declaration 
+   of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.
+    The name and the function body are hoisted to the top of the code which allows you to call it beore the function appears.
+    Being able to use a variable at the top of their scope by using var.*/
+
+//    hoisted()
+
+//    function hoisted(){
+//     console.log("Hello World")
+//    }
+
+//    console.log(x);
+//    var x =2;
+
+  /*The ECMA released ECMAScript 6 (also known as ES6), which introduced new ways to declare variables and functions, which helped resolve 
+  issues related to hoisting that existed with the traditional var keyword and function declarations.*/
+</script>
+
+</html>
